@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 18:01:29 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/15 18:28:21 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/05/04 17:08:04 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,36 @@ NinjaTrap::~NinjaTrap(void)
 	std::cout << m_name << " became a ronin" << std::endl;
 }
 
-unsigned int		NinjaTrap::ninjaShoebox(std::string const & target)
+void		NinjaTrap::ninjaShoebox(const ClapTrap& target)
 {
-	if (this->m_hit_points == 0)
-		std::cout << "Oops, " << this->m_name << " are out of service" << std::endl;
-	else if (this->m_energy_points < 25)
-		std::cout << "Oops, " << this->m_name << " needs new shoeboxes" << std::endl;
-	else
-	{
-		this->m_energy_points -= 25;
-		std::cout << this->m_name << " packs " << target << " in a shoebox ! -10" << std::endl;
-		return (10);
-	}
-	return (0);
+	std::cout << "Don't panic!" << std::endl <<
+				" And don't disturb me, I can't talk to you" << std::endl <<
+				" Really, just don't talk to me, I hate you dude" << std::endl;
+	(void)target;
+}
+
+void		NinjaTrap::ninjaShoebox(const FragTrap& target)
+{
+	std::cout << "tututu..." << std::endl <<
+				" It's good to be alive" << std::endl <<
+				" To be alive" << std::endl <<
+				" To be alive" << std::endl;
+	(void)target;
+}
+
+void		NinjaTrap::ninjaShoebox(const ScavTrap& target)
+{
+	std::cout << "Ow! After 42 years to keep my door open," <<
+				"you're the first humanoid that want talk to me" << std::endl <<
+				" Grazie mille truc..." << std::endl <<
+				" My italian is rusty, like my door :(" << std::endl;
+	(void)target;
+}
+
+void		NinjaTrap::ninjaShoebox(const NinjaTrap& target)
+{
+	std::cout << "Shit, you call me with me? really?" << std::endl <<
+				" You're not in Inception" << std::endl <<
+				" Go out my method Human!" << std::endl;
+	(void)target;
 }

@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 16:48:32 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/15 18:46:07 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/05/04 17:04:35 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,14 +83,9 @@ int		main(void)
 	rambo.takeDamage(tutu.rangedAttack("Norris"));
 	rambo.beRepaired(2);
 	rambo.beRepaired(1042);
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
-	tutu.beRepaired(0);
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
-	rambo.takeDamage(tutu.ninjaShoebox("Norris"));
+	tutu.ninjaShoebox(ClapTrap("Bob l'eponge rectangle"));
+	tutu.ninjaShoebox(norris);
+	tutu.ninjaShoebox(toto);
+	tutu.ninjaShoebox(tutu);
 	std::cout << std::endl;
 }
