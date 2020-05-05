@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 17:58:28 by ybayart           #+#    #+#             */
-/*   Updated: 2020/05/04 17:01:41 by hexa             ###   ########.fr       */
+/*   Updated: 2020/05/05 01:10:43 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 # include "ScavTrap.hpp"
 # include "NinjaTrap.hpp"
 
+class	SuperTrap;
+
 class	NinjaTrap : public virtual ClapTrap
 {
 	public:
@@ -31,6 +33,7 @@ class	NinjaTrap : public virtual ClapTrap
 	void		ninjaShoebox(const FragTrap&);
 	void		ninjaShoebox(const ScavTrap&);
 	void		ninjaShoebox(const NinjaTrap&);
+	void		ninjaShoebox(const SuperTrap&);
 };
 
 #endif

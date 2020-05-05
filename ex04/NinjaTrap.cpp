@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 18:01:29 by ybayart           #+#    #+#             */
-/*   Updated: 2020/05/04 17:08:04 by hexa             ###   ########.fr       */
+/*   Updated: 2020/05/05 02:02:44 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,11 @@ void		NinjaTrap::ninjaShoebox(const NinjaTrap& target)
 	std::cout << "Shit, you call me with me? really?" << std::endl <<
 				" You're not in Inception" << std::endl <<
 				" Go out my method Human!" << std::endl;
+	(void)target;
+}
+
+void		NinjaTrap::ninjaShoebox(const SuperTrap& target)
+{
+	std::cout << "I'M JUST BETER THAN YOU, GO OUT" << std::endl;
 	(void)target;
 }
