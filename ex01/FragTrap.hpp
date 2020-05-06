@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 15:51:12 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/15 17:32:18 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/05/06 03:18:31 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <string>
 # include <iostream>
+# include <cstdlib>
 
 class	FragTrap
 {

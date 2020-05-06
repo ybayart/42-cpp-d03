@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 17:31:03 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/15 17:59:38 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/05/06 03:19:14 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <string>
 # include <iostream>
+# include <cstdlib>
 
 class	ClapTrap
 {
