@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 16:48:32 by ybayart           #+#    #+#             */
-/*   Updated: 2020/05/04 17:12:22 by hexa             ###   ########.fr       */
+/*   Updated: 2020/05/08 17:15:34 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int		main(void)
 	NinjaTrap	rambo("Rambo");
 	SuperTrap	wick("John Wick");
 	std::cout << std::endl;
+
+	wick.meleeAttack("Chuck");
 
 	std::cout << "FragTrap" << std::endl;
 	chuck.takeDamage(toto.meleeAttack("Chuck"));
